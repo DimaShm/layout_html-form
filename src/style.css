@@ -1,1 +1,24 @@
-/* styles go here */
+.fieldset {
+  margin-bottom: 20px;
+}
+
+.fieldset :last-child {
+  margin-bottom: auto;
+}
+
+/* .input {
+  margin-top: 10px;
+} */
+
+.label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.label--inline {
+  display: inline-block;
+}
+
+/* .select {
+  margin-top: 10px;
+} */
