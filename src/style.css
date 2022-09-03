@@ -1,1 +1,8 @@
 /* styles go here */
+.border {
+  border: 1px solid black;
+}
+
+.form1 {
+  padding: 3px;
+}

@@ -2,16 +2,101 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
     <h1>HTML Form</h1>
+    <form>
+      Personal information
+      <div class="border">
+        <div class="form1">
+          <label for="name">Name:</label>
+          <input type="text" name="name">
+        </div>
+        <div class="form1">
+          <label for="surname">Surname:</label>
+          <input type="text" name="surname">
+        </div>
+        <div class="form1">
+          <label for="old">How old are You?:</label>
+          <input 
+            type="number" 
+            name="old"
+            min="1" 
+            max="100">
+        </div>
+        <div class="form1">
+          <label for="date">Full date of birh:</label>
+          <input type="date" name="date">
+        </div>
+        <div class="form1">
+          <label for="box">I acept the tern of the agreement</label>
+          <input type="checkbox" name="box">
+        </div>
+      </div>
+      Registration
+      <div class="border">
+        <div class="form1">
+          <label for="mail">E-mail:</label>
+          <input type="email" 
+            name="mail" 
+            required>
+        </div>
+        <div class="form1">
+          <label for="password">Password</label>
+          <input 
+          type="password" 
+          name="password"
+          minlenght="4" 
+          maxlength="8" 
+          required>
+        </div>
+      </div>
+      Add interesting fact about you!
+      <div class="border">
+        <div class="form1">
+          <label for="contact">Do you love cats?</label>
+          <input 
+            type="radio" 
+            id="contactYes" 
+            name="contact" 
+            value="Yes">
+          <label for="contactYes">Yes</label>
+          <input 
+            type="radio" 
+            id="contactNo" 
+            name="contact" 
+            value="No">
+          <label for="contactNo">No</label>
+        </div>
+        <div class="form1">
+          What is your favorite color?
+          <input type="color" name="color">
+        </div>
+        <div class="form1">
+          What time do you go to bed?
+          <input type="time" name="time">
+        </div>
+        <div class="form1">
+          How do you rate our work?
+          <input type="range" name="range">
+        </div>
+      </div>
+        Additional info:
+      <div class="border">
+        <div class="form1">
+          Comments:
+          <input type="multiple" name="multiple">
+        </div>
+      </div>
+          
+
+
+
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
