@@ -1,8 +1,12 @@
 /* styles go here */
-.border {
-  border: 1px solid black;
+.fieldset {
+  margin-bottom: 20px;
 }
 
 .form1 {
-  padding: 3px;
+  margin-bottom: 10px;
+}
+
+.fieldset :last-child {
+  margin-bottom: auto;
 }

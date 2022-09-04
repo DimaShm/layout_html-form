@@ -8,94 +8,162 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
-    <form>
-      Personal information
-      <div class="border">
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+      <fieldset class="fieldset">
+        <legend>Personal information</legend>
         <div class="form1">
-          <label for="name">Name:</label>
-          <input type="text" name="name">
+          <label for="surname">
+            Surname:
+            <input type=
+            "text" 
+            name="surname"
+            autocomplete="off">
+          </label>
         </div>
         <div class="form1">
-          <label for="surname">Surname:</label>
-          <input type="text" name="surname">
+          <label for="name">
+            Name:
+            <input type="text" 
+            name="name"
+            autocomplete="off">
+          </label>
         </div>
         <div class="form1">
-          <label for="old">How old are You?:</label>
-          <input 
-            type="number" 
-            name="old"
-            min="1" 
-            max="100">
+          <label for="age">
+            How old are You?
+            <input 
+              type="number" 
+              name="age"
+              min="1" 
+              max="100"
+              value="12">
+          </label>
         </div>
         <div class="form1">
-          <label for="date">Full date of birh:</label>
-          <input type="date" name="date">
+          <label for="date">
+            Full date of birth:
+            <input type="date" 
+            name="date">
+          </label>
         </div>
         <div class="form1">
-          <label for="box">I acept the tern of the agreement</label>
-          <input type="checkbox" name="box">
+          <label for="box">
+            I accept the term of the agreement
+            <input type=
+            "checkbox" 
+            name="box">
+          </label>
         </div>
-      </div>
-      Registration
-      <div class="border">
+      </fieldset>
+      <fieldset class="fieldset">
+        <legend>Registration</legend>
         <div class="form1">
-          <label for="mail">E-mail:</label>
-          <input type="email" 
+          <label for="mail">
+            E-mail:
+            <input type=
+            "email" 
+            placeholder="email@example.com"
+            autocomplete="off"
             name="mail" 
             required>
+          </label>
         </div>
         <div class="form1">
-          <label for="password">Password</label>
-          <input 
-          type="password" 
-          name="password"
-          minlenght="4" 
-          maxlength="8" 
-          required>
+          <label for="password">
+            Password:
+            <input 
+            type="password" 
+            name="password"
+            minlenght="4" 
+            maxlength="8" 
+            required>
+          </label>
         </div>
-      </div>
-      Add interesting fact about you!
-      <div class="border">
+      </fieldset>
+      <fieldset class="fieldset">
+        <legend>An interesting fact about you!</legend>
         <div class="form1">
-          <label for="contact">Do you love cats?</label>
+          <label for="contact">
+            Do you love cats?
+          </label>
           <input 
-            type="radio" 
-            id="contactYes" 
-            name="contact" 
-            value="Yes">
-          <label for="contactYes">Yes</label>
+          type="radio" 
+          id="contactYes" 
+          name="contact" 
+          value="Yes">
+          <label for="contactYes">
+            Yes
+          </label>
           <input 
-            type="radio" 
-            id="contactNo" 
-            name="contact" 
-            value="No">
-          <label for="contactNo">No</label>
+          type="radio" 
+          id="contactNo" 
+          name="contact" 
+          value="No">
+          <label for="contactNo">
+            No
+          </label>
         </div>
         <div class="form1">
           What is your favorite color?
           <input type="color" name="color">
         </div>
         <div class="form1">
-          What time do you go to bed?
-          <input type="time" name="time">
+          <label for="name">
+            What time do you go to bed?
+            <input type=
+            "time" 
+            name="time">
+          </label>
+        </div> 
+        <div class="form1">
+          <label for="Cars">
+            What are your favorite brand of cars?
+            <select 
+              class="select" 
+              name="Cars" 
+              required 
+              multiple
+            >
+              <option value="BMW">BMW</option>
+              <option value="Audi">Audi</option>
+              <option value="Lada">Lada</option>
+            </select>
+          </label>
         </div>
         <div class="form1">
-          How do you rate our work?
-          <input type="range" name="range">
+          <label for="range">
+            How do you rate our work?
+            <input type=
+            "range" 
+            name="range"
+            value="0" 
+            >
+          </label>
         </div>
-      </div>
-        Additional info:
-      <div class="border">
+      </fieldset>
+      <fieldset class="fieldset">
+        <legend>Additional info:</legend>
         <div class="form1">
-          Comments:
-          <input type="multiple" name="multiple">
+          <label for="textarea">
+            Comments:
+            <textarea 
+              name="textarea" 
+              cols="17" 
+              rows="2">
+            </textarea>
+          </label>
         </div>
-      </div>
-          
-
-
-
+        <div class="form1">
+          <label for="feedback">
+            Would you recommend us?
+            <select name="recommendation">
+              <option value="yes">yes</option>
+              <option value="no">no</option>
+            </select>
+          </label>
+        </div>
+      </fieldset>
+      <button type="submit">Submit</button>
     </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
